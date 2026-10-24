@@ -2,10 +2,59 @@
     border: solid;
     border-color: grey;
     background-color: rgb(255, 255, 255);
-    border-radius: 15px;
 
     height: 480px;
     width: 350px;
+}
+
+.Navbar {
+    position: sticky;
+    background-color: red;
+    height: 50px;
+    top: 0px;
+    
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.Navbar * {
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.Navbar a {
+    font-size: 20px;
+    margin: 0px;
+
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+
+    text-align: center;
+    height: auto;
+
+    padding-bottom: 12.5px;
+    padding-top: 12.5px;
+
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    transition: background-color .25s;
+}
+
+.Navbar a:hover {
+    background-color: rgb(200, 0, 0);
+    transition: background-color .25s;
+
+}
+
+body {
+    margin: 0px;
 }
 
 .ItemThumbnail {
@@ -74,6 +123,7 @@
     font-weight: 500;
     font-size: 25px;
     font-style: normal;
+    transition: background-color .25s;
 
     border-style: none;
 }
@@ -89,6 +139,30 @@
     font-weight: 500;
     font-size: 20px;
     font-style: normal;
+    transition: background-color .25s;
 
     border-style: none;
+}
+
+.BuyButton:hover {
+    background-color: rgb(200, 0, 0);
+    transition: background-color .25s;
+
+}
+
+.CartButton:hover {
+    background-color: rgba(241, 124, 124, 0.517);
+    transition: background-color .25s;
+
+}
+
+#Catalogue {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 5px; 
+    column-gap: 5px;
+
+    margin-left: 20px;
+    
 }
